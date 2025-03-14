@@ -1,0 +1,59 @@
+equation #1 -> -(8+9+8)
+equation #2 -> -5+-5
+equation #3 -> 2+(14-9)+4*[6+(7+5)-1]
+equation #4 -> ()(4+9)
+equation #5 -> (7-9(
+equation #6 -> -((4+9))
+equation #7 -> 9+8
+equation #8 -> 4+2+(4+4)
+equation #9 -> 7+7
+equation #10 -> (((5+4)))
+equation #11 -> 100+99
+equation #12 -> 5/-4
+equation #13 -> -5-(3+9)
+equation #1 -> valid
+equation #2 -> valid
+equation #3 -> valid
+equation #4 -> invalid -> () is not valid
+equation #5 -> invalid -> ( is not closed
+equation #6 -> valid
+equation #7 -> valid
+equation #8 -> valid
+equation #9 -> valid
+equation #10 -> valid
+equation #11 -> valid
+equation #12 -> valid
+equation #13 -> valid
+prefix equation 1:
++ -8 + -9 -8 
+prefix equation 2:
++ -5 -5 
+prefix equation 3:
++ 2 + - 14 9 * 4 + 6 - + 7 5 1 
+prefix equation 6:
++ -4 -9 
+prefix equation 7:
++ 9 8 
+prefix equation 8:
++ 4 + 2 + 4 4 
+prefix equation 9:
++ 7 7 
+prefix equation 10:
++ 5 4 
+prefix equation 11:
++ 100 99 
+prefix equation 12:
+/ 5 -4 
+prefix equation 13:
+- -5 + 3 9 
+equation 1 -> -25
+equation 2 -> -10
+equation 3 -> 75
+equation 6 -> -13
+equation 7 -> 17
+equation 8 -> 14
+equation 9 -> 14
+equation 10 -> 9
+equation 11 -> 199
+equation 12 -> -1
+equation 13 -> -17

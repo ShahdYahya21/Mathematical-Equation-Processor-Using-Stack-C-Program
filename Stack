@@ -1,0 +1,71 @@
+typedef struct Stack* stack;
+struct Stack {
+  char* element;
+  stack next;
+};
+void MakeEmpty(stack s);
+void pop(stack s);
+
+
+int IsEmpty(stack s) {
+  return s->next == NULL;
+}
+
+stack createStack() {
+  stack s;
+  s = (stack) malloc(sizeof(struct Stack));
+  if (s == NULL)
+    printf("Out of memory");
+
+    s->next = NULL;
+    MakeEmpty(s);
+    return s;
+
+}
+
+void MakeEmpty(stack s) {
+  if (s->next == NULL)
+    return;
+  while (!IsEmpty(s)) {
+    pop(s);
+  }
+}
+
+void pop(stack s) {
+    if (!IsEmpty(s)) {
+        stack temp = s->next;
+        s->next = s->next->next;
+        free(temp);
+    } else {
+        printf("Empty Stack\n");
+    }
+}
+
+
+
+char* Top(stack s) {
+  if (!IsEmpty(s)) {
+    return s->next->element;
+  } else {
+    printf("Empty Stack\n");
+    return NULL;
+  }
+}
+
+void push(char* X, stack s) {
+  stack temp;
+  temp = (struct Stack *) malloc(sizeof(struct Stack));
+  if (temp == NULL) {
+    printf("Out of memory");
+    MakeEmpty(s);
+    exit(1);
+  }
+  temp->element = X;
+  temp->next = s->next;
+  s->next = temp;
+}
+
+void DisposeStack(stack s) {
+  MakeEmpty(s);
+  free(s);
+}
