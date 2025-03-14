@@ -1,8 +1,8 @@
-# **Mathematical Equation Processor Using Stack (C Program)**  
+## **Mathematical Equation Processor Using Stack (C Program)**  
 
 This C program processes **mathematical equations** by reading them from a file, checking their validity, converting them from **infix notation to prefix notation**, and evaluating them using **stack-based operations**.
 
-## **Core Stack Operations**  
+### **Core Stack Operations**  
 
 - `createStack()` – Initializes an empty stack.  
 - `push()` – Adds an element to the stack.  
@@ -10,7 +10,7 @@ This C program processes **mathematical equations** by reading them from a file,
 - `Top()` – Retrieves the top element without removing it.  
 - `IsEmpty()` – Checks if the stack is empty.  
 
-## **Mathematical Processing Functions**  
+### **Mathematical Processing Functions**  
 
 The program supports the following **validation and transformation functions**:  
 
@@ -19,7 +19,7 @@ The program supports the following **validation and transformation functions**:
 - `reverse(char array[maxLength][maxLength])` – Reverses an equation stored in an array.  
 - `negativeCases(char equations[][maxLength][maxLength], int count, const int valid[maxLength])` – Handles negative numbers in equations (e.g., `3+-5` is treated as `3 + (-5)`).  
 
-## **Arithmetic Operations**  
+### **Arithmetic Operations**  
 
 The program supports the following arithmetic operations:  
 
@@ -30,7 +30,7 @@ The program supports the following arithmetic operations:
 - `evaluation(char arr[maxLength][maxLength][maxLength], int count, const int valid[maxLength])`  
   - Evaluates **prefix expressions** and computes the result using a stack.  
 
-## **Features** 
+### **Features** 
 
 **Reads equations from an input file (`Input`)**  
 **Checks equation validity (balanced parentheses, correct operator usage)**  
@@ -43,7 +43,7 @@ The program supports the following arithmetic operations:
 **Prints results to an output file (`OutputEquation`)**  
 **Provides a menu-based user interface**
 
-## Program Output Example
+### Program Output Example
 When running the calculator, the user is presented with the following menu:
 
 #### Welcome to my calculator
